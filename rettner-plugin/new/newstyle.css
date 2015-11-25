@@ -1,0 +1,107 @@
+/********* CSS that was inserted through Wordpress's jetpack *********/
+
+/********* resetting boutique(storefront's installed child theme) and wooocommerce's elements **********/
+.comments-area, .woocommerce-tabs ul.tabs li.reviews_tab,div#secondary {
+	display: none;
+}
+
+/*header*/
+.col-full {
+	max-width: 100%;
+	padding: 0;
+}
+
+#site-navigation {
+	margin-top: .5em;
+}
+
+.site-header .site-branding {
+	width: 100%;
+	height: 35px;
+	margin-bottom: .4em;
+	margin-top: 0;
+	padding-right: 1em;
+}
+
+.site-content .col-full {
+	max-width: 1000px;
+	box-shadow: 0 5px 5px -3px #000;
+}
+
+.boutique-primary-navigation {
+	margin: 0;
+	background-color: #292929;
+/*pink strip above navigation table*/
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	box-shadow: inset 0 4px 0 rgba(171,30,82,0.3), inset 0 .2em rgba(171,30,82,0.8);
+}
+
+.site-footer a:not(.button) {
+	color: #777777;
+}
+
+.woocommerce-active .site-header .secondary-navigation {
+	float: inherit;
+}
+
+/**********NEW ELEMENTS**********/
+#logo {
+/*u of r logo*/
+	float: right;
+	margin-right: -10px;
+	width:157.2px;
+	height:32.4px;
+}
+
+#RettnerLogo {
+	padding: .5em;
+	float: left;
+	margin-left: .2em;
+}
+
+#RettnerLogo img {
+	width: 450px;
+	height: 75px;
+}
+
+/*header background*/
+.site-header {
+	padding-top: .5em;
+	background: url("http://localhost:8888/wp_development/content/uploads/2015/08/bluefooter_lodyas.png");
+}
+
+/*page area background*/
+.site-content {
+	background-image: url("http://localhost:8888/wp_development/content/uploads/2015/08/sos.png");
+}
+
+/*footer background*/
+.site-footer .col-full {
+	background: url("http://localhost:8888/wp_development/content/uploads/2015/08/bluefooter_lodyas.png");
+}
+
+/******* STATES *******/
+@media screen and (min-width: 768px) {
+	.woocommerce-active .site-header .main-navigation {
+		width: inherit;
+		float: right;
+		clear: none;
+		margin-right: .2em;
+	}
+	
+	.boutique-primary-navigation {
+		margin: 0;
+		padding: 0 1em;
+	}
+	
+	.site-header .site-branding {
+		margin-top: -.8em;
+	}
+}
+
+@media screen and (min-width: 1043px) {
+	#logo {
+		margin-right: 1em;
+	}
+}
